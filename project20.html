@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Roushan Raj Choudhary | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: #333;
+        transition: 0.4s;
+    }
+
+    body.dark {
+        background: linear-gradient(135deg, #0f172a, #020617);
+        color: #eee;
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px;
+        color: white;
+    }
+
+    header h1 {
+        font-size: 42px;
+    }
+
+    header p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    header button {
+        margin: 15px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 25px;
+        background: #ff9800;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    header button:hover {
+        transform: scale(1.1);
+        background: #ffb300;
+    }
+
+    section {
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 25px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+
+    body.dark .card {
+        background: #111827;
+        color: #eee;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    footer {
+        background: #000;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Roushan Raj Choudhary</h1>
+    <p>Creative Web Developer | HTML • CSS • JavaScript</p>
+    <button onclick="toggleContact()">Contact Me</button>
+    <button onclick="toggleTheme()">Dark / Light Mode</button>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <div class="cards">
+        <div class="card">
+            <p>
+                I am a passionate web developer with strong skills in HTML, CSS,
+                and JavaScript. I enjoy creating colorful, interactive, and responsive
+                web applications and continuously improving my frontend expertise.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="cards">
+        <div class="card">HTML5 & CSS3</div>
+        <div class="card">JavaScript & DOM</div>
+        <div class="card">Git & GitHub</div>
+        <div class="card">Responsive Web Design</div>
+    </div>
+</section>
+
+<section>
+    <h2>Experience</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Smart India Hackathon (SIH) – 2025</h3>
+            <p>
+                Participated in Smart India Hackathon (2025), gaining hands-on experience
+                in teamwork, problem-solving, and real-world project development.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <div class="cards">
+        <div class="card">Personal Portfolio Website</div>
+        <div class="card">JavaScript Form Validation</div>
+        <div class="card">DOM Manipulation & Events</div>
+        <div class="card">Canvas Drawing Application</div>
+    </div>
+</section>
+
+<section id="contact" class="hidden">
+    <h2>Contact</h2>
+    <div class="cards">
+        <div class="card">
+            <p><strong>Email:</strong> roushan.raj.choudhary@rungta.org</p>
+            <p><strong>linkedin:</strong>www.linkedin.com/in/roushan-raj-choudhary-b37871381</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Roushan Raj Choudhary | All Rights Reserved</p>
+</footer>
+
+<script>
+    function toggleContact() {
+        document.getElementById("contact").classList.toggle("hidden");
+    }
+
+    function toggleTheme() {
+        document.body.classList.toggle("dark");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation Demo</title>
+</head>
+<body>
+
+    <h2 id="heading">DOM Manipulation Example</h2>
+
+    <p id="para">This is a paragraph.</p>
+
+    <p class="info">This is selected using querySelector.</p>
+
+    <button onclick="changeById()">Change using getElementById()</button>
+    <button onclick="changeByQuery()">Change using querySelector()</button>
+    <button onclick="changeInnerHTML()">Change using innerHTML</button>
+
+    <script>
+        // Using getElementById()
+        function changeById() {
+            document.getElementById("para").style.color = "blue";
+            document.getElementById("para").innerHTML = "Text changed using getElementById()";
+        }
+
+        // Using querySelector()
+        function changeByQuery() {
+            document.querySelector(".info").style.fontWeight = "bold";
+            document.querySelector(".info").innerHTML = "Text changed using querySelector()";
+        }
+
+        // Using innerHTML()
+        function changeInnerHTML() {
+            document.getElementById("heading").innerHTML =
+                "DOM <span style='color:red;'>Manipulation</span> Successful!";
+        }
+    </script>
+
+</body>
+</html>

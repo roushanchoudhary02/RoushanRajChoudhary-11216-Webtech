@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Drawing Demo</title>
+</head>
+<body>
+
+    <h2>HTML Canvas Drawing Example</h2>
+
+    <canvas id="myCanvas" width="400" height="300" style="border:1px solid black;">
+        Your browser does not support canvas.
+    </canvas>
+
+    <script>
+        // Get canvas and context
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Draw filled rectangle
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 100, 60);
+
+        // Draw circle
+        ctx.beginPath();
+        ctx.arc(200, 60, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = "green";
+        ctx.fill();
+
+        // Draw line
+        ctx.beginPath();
+        ctx.moveTo(50, 150);
+        ctx.lineTo(300, 150);
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 3;
+        ctx.stroke();
+
+        // Draw outlined rectangle
+        ctx.strokeStyle = "purple";
+        ctx.strokeRect(150, 180, 120, 60);
+    </script>
+
+</body>
+</html>

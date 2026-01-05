@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Functions and Scope Demo</title>
+</head>
+<body>
+
+    <h2>JavaScript User Defined Functions & Scope</h2>
+
+    <button onclick="runDemo()">Run Demo</button>
+
+    <pre id="output"></pre>
+
+    <script>
+        // Utility function to print output
+        function print(message) {
+            document.getElementById("output").innerText += message + "\n";
+        }
+
+        // User-defined function (Function Declaration)
+        function greet(name) {
+            return "Hello, " + name;
+        }
+
+        // Function Expression
+        var add = function(a, b) {
+            return a + b;
+        };
+
+        // Arrow Function
+        const multiply = (a, b) => a * b;
+
+        function runDemo() {
+            document.getElementById("output").innerText = "";
+
+            // Function invocation
+            print(greet("Roushan Raj Choudhary"));
+            print("Addition: " + add(10, 20));
+            print("Multiplication: " + multiply(5, 4));
+
+            print("\n--- Scope Demonstration ---");
+
+            // var scope
+            if (true) {
+                var x = 10;
+            }
+            print("var x (function scope): " + x);
+
+            // let scope
+            if (true) {
+                let y = 20;
+                print("let y (block scope): " + y);
+            }
+
+            // const scope
+            if (true) {
+                const z = 30;
+                print("const z (block scope): " + z);
+            }
+        }
+    </script>
+
+</body>
+</html>

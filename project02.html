@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Links, Images and Lists Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            width: 250px;
+            height: auto;
+            border: 2px solid #333;
+            margin-top: 10px;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Elements Demonstration</h1>
+
+    <!-- Links Section -->
+    <div class="section">
+        <h2>HTML Links</h2>
+        <p>Click the links below:</p>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">Visit Google</a></li>
+            <li><a href="https://www.wikipedia.org" target="_blank">Visit Wikipedia</a></li>
+            <li><a href="#lists">Go to Lists Section</a></li>
+        </ul>
+    </div>
+
+    <!-- Images Section -->
+    <div class="section">
+        <h2>HTML Image</h2>
+        <p>Example image displayed below:</p>
+        <img src="https://via.placeholder.com/250" alt="Sample Image">
+    </div>
+
+    <!-- Lists Section -->
+    <div class="section" id="lists">
+        <h2>HTML Lists</h2>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Design Webpage</li>
+            <li>Write Code</li>
+            <li>Test in Browser</li>
+        </ol>
+
+        <h3>Nested List</h3>
+        <ul>
+            <li>Frontend
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <li>Backend
+                <ol>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Node.js</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

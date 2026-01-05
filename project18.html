@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create and Manipulate Elements</title>
+
+    <style>
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript DOM Create & Manipulate Elements</h2>
+
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="modifyItem()">Modify First Item</button>
+    <button onclick="removeItem()">Remove Last Item</button>
+
+    <ul id="list">
+        <li>Item 1</li>
+    </ul>
+
+    <script>
+        // Append (Create + Add) element
+        function addItem() {
+            const li = document.createElement("li");
+            li.textContent = "New Item";
+            document.getElementById("list").appendChild(li);
+        }
+
+        // Modify child node
+        function modifyItem() {
+            const list = document.getElementById("list");
+            if (list.firstElementChild) {
+                list.firstElementChild.textContent = "Modified Item";
+            }
+        }
+
+        // Remove child node
+        function removeItem() {
+            const list = document.getElementById("list");
+            if (list.lastElementChild) {
+                list.removeChild(list.lastElementChild);
+            }
+        }
+    </script>
+
+</body>
+</html>

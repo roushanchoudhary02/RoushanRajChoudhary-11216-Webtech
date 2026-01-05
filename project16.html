@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show / Hide Elements & Toggle CSS Class</title>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .highlight {
+            color: white;
+            background-color: green;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Show / Hide & Toggle Class Demo</h2>
+
+    <p id="text">This paragraph can be shown or hidden.</p>
+
+    <button onclick="toggleText()">Show / Hide Text</button>
+    <button onclick="toggleHighlight()">Toggle Highlight</button>
+
+    <script>
+        // Show or hide element
+        function toggleText() {
+            document.getElementById("text").classList.toggle("hidden");
+        }
+
+        // Toggle CSS class dynamically
+        function toggleHighlight() {
+            document.getElementById("text").classList.toggle("highlight");
+        }
+    </script>
+
+</body>
+</html>

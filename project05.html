@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic HTML Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        section {
+            flex: 3;
+            background-color: white;
+            padding: 15px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        article {
+            background-color: #eaeaea;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container">
+
+        <!-- Section -->
+        <section>
+            <h1>Main Section</h1>
+
+            <!-- Article 1 -->
+            <article>
+                <h2>Article One</h2>
+                <p>
+                    This is the first article. Articles contain independent, self-contained content
+                    such as blog posts, news items, or tutorials.
+                </p>
+            </article>
+
+            <!-- Article 2 -->
+            <article>
+                <h2>Article Two</h2>
+                <p>
+                    This is the second article inside the section. Multiple articles can be grouped
+                    inside a section.
+                </p>
+            </article>
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <h2>Aside Section</h2>
+            <p>
+                This area contains related information such as links, ads, or side notes.
+            </p>
+            <ul>
+                <li>Related Link 1</li>
+                <li>Related Link 2</li>
+                <li>Related Link 3</li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
